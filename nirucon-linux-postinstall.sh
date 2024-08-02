@@ -1,16 +1,19 @@
 #!/bin/bash
 
 # Nirucon Linux Post Install script by Nicklas Rudolfsson
-# WARNING: Work in progress!
+# WARNING: Work in progress! I'm an old noob and definitely not a pro at Linux or bash scripting.
 # Only supports Arch Linux (systemd) based distributions at the moment!
 
 # Function: Display welcome message
 display_welcome() {
     echo "Welcome to Nirucon Linux Post Install script by Nicklas Rudolfsson."
-    echo "This script will help you set up your Linux system with my custom configurations."
-    echo "It is made for my self but is free to use and modify."
-    echo "Focused on suckless dwm noir themed setup, music (DAW) and some other content creation."
-    echo "Please proceed with caution as the script modifies your system settings."
+    echo "The script:"
+    echo "- Will help you set up your Linux system with my custom post install configurations."
+    echo "- This script and related scripts are created by me for my personal use, but they are free to use and modify."
+    echo "However, do not expect any support, and I take no responsibility for any issues that may arise on your system due to this script!"
+    echo "The script is designed to use startx and .xinitrc with Suckless DWM as the window manager."
+    echo "It does not support login managers such as SDDM and similar. If you need those, you will have to configure them yourself."
+    echo "Please proceed with caution as the script modifies your system settings!"
 }
 
 # Function: Check for internet connection
@@ -62,13 +65,13 @@ clone_and_start_script() {
             REPO_URL="https://github.com/nirucon/nirucon-alpi"
             ;;
         debian|ubuntu)
-            REPO_URL="https://github.com/nirucon/nirucon-debpi"
+            REPO_URL="https://github.com/nirucon/nirucon-dlpi"
             ;;
         void)
             REPO_URL="https://github.com/nirucon/nirucon-vlpi"
             ;;
         *)
-            echo "Sorry, this script and related scripts only support Arch Linux systemd based, Void Linux (glibc), and Debian based distributions."
+            echo "Sorry, this script and related scripts only support Arch Linux (systemd) based, Void Linux (glibc), and Debian based distributions."
             exit 1
             ;;
     esac
