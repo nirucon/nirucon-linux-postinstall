@@ -1,11 +1,13 @@
 # nirucon-linux-postinstall
 
-## WORK IN PROGRESS - DO NOT USE!
+## WORK IN PROGRESS - NOT RECOMMENDED TO USE!
 
-Arch - works fine for me at the moment
+Post install script for:
 
-Debian based - some parts work, not all 
+Arch Linux - works fine for me at the moment (this is my daily driver and main focus of this script atm)
 
-Void - not working
+Debian Linux - some parts work, not all - work in progress!
+
+Void Linux - some parts work, not all - work in progress!
 
 Better readme will come...
