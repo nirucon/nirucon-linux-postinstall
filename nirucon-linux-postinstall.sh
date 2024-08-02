@@ -82,8 +82,16 @@ clone_and_start_script() {
             ;;
     esac
 
-    echo "Cloning the post installation script from $REPO_URL..."
-    git clone "$REPO_URL" ~/nirucon-postinstall-script
+    # Create the ~/Git directory if it does not exist
+    mkdir -p ~/Git
+
+    # Remove the existing cloned directory if it exists
+    if [ -d "~/Git/$SCRIPT" ]; then
+        rm -rf "~/Git/$SCRIPT"
+    fi
+
+    echo "Cloning the post installation script from $REPO_URL to ~/Git..."
+    git clone "$REPO_URL" "~/Git/$SCRIPT"
 
     if [ $? -ne 0 ]; then
         echo "Failed to clone the repository. Please check your internet connection and try again."
@@ -91,7 +99,7 @@ clone_and_start_script() {
     fi
 
     echo "Post installation script for your Linux version ($DISTRO) is cloned and will now start."
-    cd ~/nirucon-postinstall-script
+    cd "~/Git/$SCRIPT"
 
     # List contents of the cloned directory to debug the issue
     echo "Contents of the cloned directory:"
