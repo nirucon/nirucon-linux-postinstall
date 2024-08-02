@@ -33,6 +33,7 @@ check_internet_connection() {
 # Function: Prompt confirmation to proceed
 confirm_proceed() {
     read -p "Are you sure you want to continue with the installation? This script is provided without any warranties. Proceed at your own risk! [Y/n]: " confirm_install
+    confirm_install=${confirm_install:-Y}
     if [[ "$confirm_install" != [Yy]* ]]; then
         echo "Installation aborted by the user."
         exit 0
