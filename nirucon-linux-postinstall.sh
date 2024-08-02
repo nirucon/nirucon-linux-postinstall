@@ -66,12 +66,15 @@ clone_and_start_script() {
     case $DISTRO in
         arch)
             REPO_URL="https://github.com/nirucon/nirucon-alpi"
+            SCRIPT="nirucon-alpi"
             ;;
         debian|ubuntu)
             REPO_URL="https://github.com/nirucon/nirucon-dlpi"
+            SCRIPT="nirucon-dlpi"
             ;;
         void)
             REPO_URL="https://github.com/nirucon/nirucon-vlpi"
+            SCRIPT="nirucon-vlpi"
             ;;
         *)
             echo "Sorry, this script and related scripts only support Arch Linux (systemd), Void Linux (glibc, runit), and Debian (systemd) based distributions."
@@ -89,7 +92,17 @@ clone_and_start_script() {
 
     echo "Post installation script for your Linux version ($DISTRO) is cloned and will now start."
     cd ~/nirucon-postinstall-script
-    ./postinstall.sh
+
+    # List contents of the cloned directory to debug the issue
+    echo "Contents of the cloned directory:"
+    ls -l
+
+    if [ -f ./$SCRIPT ]; then
+        ./$SCRIPT
+    else
+        echo "$SCRIPT not found in the cloned directory."
+        exit 1
+    fi
 }
 
 # Main function to execute the script
