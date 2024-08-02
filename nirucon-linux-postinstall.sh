@@ -105,6 +105,9 @@ clone_and_start_script() {
     echo "Contents of the cloned directory:"
     ls -l
 
+    # Set execute permission on the script
+    chmod +x ./$SCRIPT
+
     if [ -f ./$SCRIPT ]; then
         ./$SCRIPT
     else
