@@ -4,6 +4,8 @@
 
 Arch - works fine for me at the moment
 
-Debian base - some parts work, not all 
+Debian based - some parts work, not all 
 
 Void - not working
+
+Better readme will come...
