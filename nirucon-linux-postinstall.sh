@@ -73,7 +73,7 @@ clone_and_start_script() {
             REPO_URL="https://github.com/nirucon/nirucon-vlpi"
             ;;
         *)
-            echo "Sorry, this script and related scripts only support Arch Linux (systemd) based, Void Linux (glibc), and Debian based distributions."
+            echo "Sorry, this script and related scripts only support Arch Linux (systemd), Void Linux (glibc, runit), and Debian (systemd) based distributions."
             exit 1
             ;;
     esac
