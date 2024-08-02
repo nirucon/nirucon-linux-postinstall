@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# Nirucon Linux Post Install script by Nicklas Rudolfsson
-# WARNING: Work in progress! I'm an old noob and definitely not a pro at Linux or bash scripting.
+# Nirucon Linux Post Install script by Nicklas Rudolfsson.
+# WARNING:
+# Work in progress! I'm an old noob and definitely not a pro at Linux or bash scripting.
 # Only supports Arch Linux (systemd) based distributions at the moment!
+# Coming "soon": support for Void Linux (glibc, runit) and Debian (systemd) based distributions.
 
 # Function: Display welcome message
 display_welcome() {
