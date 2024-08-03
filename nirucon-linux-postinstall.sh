@@ -11,10 +11,9 @@ display_welcome() {
     clear
     echo -e "\e[1;34mWelcome to the Nirucon Linux Post Install script!\e[0m"
     echo -e "\e[1;31mDisclaimer: Use at your own risk. NO responsibility for changes made to your system.\e[0m"
-    echo "--------------------------------------------------------------------------"
+    echo "-------------------------------------------------------------------------------------------------------------------------"
     echo "The script:"
     echo "Will help me/you set up a Linux system with my custom post install configurations."
-    echo "\n"
     echo "Supports:"
     echo "Arch Linux (the largest script and most 'complete' setup - my daily driver)"
     echo "- Focused on suckless dwm setup, noir theming, DAW and media production"
@@ -22,12 +21,11 @@ display_welcome() {
     echo "- suckless dwm setup"
     echo "Debian Linux (minimal setup - works BUT WORK IN PROGRESS)"
     echo "- suckless dwm setup"
-    echo "\n”
     echo "This script and related scripts are created by me for my personal use, but they are free to use and modify."
     echo "It is designed to use startx and .xinitrc with Suckless DWM as the window manager."
     echo "It does not support login managers such as SDDM and similar. If you need those, you will have to configure them yourself."
     echo "Please proceed with caution as the script modifies your system settings!"
-    echo "--------------------------------------------------------------------------"
+    echo "-------------------------------------------------------------------------------------------------------------------------"
 }
 
 # Function: Check for internet connection
