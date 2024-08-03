@@ -1,22 +1,24 @@
 #!/bin/bash
 
-# Nirucon Linux Post Install script by Nicklas Rudolfsson.
-# WARNING:
-# Work in progress! I'm an old noob and definitely not a pro at Linux or bash scripting.
-# Only supports Arch Linux (systemd) based distributions at the moment!
-# Coming "soon": support for Void Linux (glibc, runit) and Debian (systemd) based distributions.
-# Version: 2024-08-02.01
+# nirucon-linux-postinstall: Post Install script for Arch, Void and Debian based Linux
+# Author: Nicklas Rudolfsson
+# Version: 2024-08-03
+# License: Feel free to use and modify, donate if you want :) https://www.paypal.com/paypalme/nicklasrudolfsson
+# Disclaimer: I do not have any responsibility at all for this script and changes on your system!
 
 # Function: Display welcome message
 display_welcome() {
-    echo "Welcome to Nirucon Linux Post Install script by Nicklas Rudolfsson."
+    clear
+    echo -e "\e[1;34mWelcome to the Nirucon Linux Post Install script!\e[0m"
+    echo -e "\e[1;31mDisclaimer: Use at your own risk. The author assumes no responsibility for any changes made to your system.\e[0m"
+    echo "--------------------------------------------------------------------------"
     echo "The script:"
     echo "- Will help you set up your Linux system with my custom post install configurations."
     echo "- This script and related scripts are created by me for my personal use, but they are free to use and modify."
-    echo "However, do not expect any support, and I take no responsibility for any issues that may arise on your system due to this script!"
     echo "The script is designed to use startx and .xinitrc with Suckless DWM as the window manager."
     echo "It does not support login managers such as SDDM and similar. If you need those, you will have to configure them yourself."
     echo "Please proceed with caution as the script modifies your system settings!"
+    echo "--------------------------------------------------------------------------"
 }
 
 # Function: Check for internet connection
