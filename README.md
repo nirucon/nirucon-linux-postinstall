@@ -1,16 +1,6 @@
-Sure, here's the README tailored to be similar to the [Nirucon-VLPI README](https://github.com/nirucon/nirucon-vlpi/tree/main):
-
----
-
 # Nirucon Linux Post Install
 
-Post Install script for my Linux setups
-
-**Version**: 2024-08-04 (Ensure you have the latest version!)  
-**Author**: Nicklas Rudolfsson  
-**GitHub**: [https://github.com/nirucon](https://github.com/nirucon)  
-**Email**: [n@rudolfsson.net](mailto:n@rudolfsson.net)  
-**License**: Feel free to use and modify. Donations are welcome :) [https://www.paypal.com/paypalme/nicklasrudolfsson](https://www.paypal.com/paypalme/nicklasrudolfsson)
+Post Install script for my Linux setups.
 
 ### Disclaimer and Warning
 1. I do not take any responsibility for this script or any changes/problems it might cause on your system!
