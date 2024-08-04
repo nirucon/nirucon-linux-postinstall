@@ -11,9 +11,9 @@ Post Install script for my Linux setups.
 If not listed here - YOU are responsible to look in the script.
 
 ### Related scripts
-- [nirucon-alpi](https://github.com/nirucon/nirucon-alpi)
-- [nirucon-vlpi](https://github.com/nirucon/nirucon-vlpi)
-- [nirucon-dlpi](https://github.com/nirucon/nirucon-dlpi)
+- Arch: [nirucon-alpi](https://github.com/nirucon/nirucon-alpi)
+- Void: [nirucon-vlpi](https://github.com/nirucon/nirucon-vlpi)
+- Debian: [nirucon-dlpi](https://github.com/nirucon/nirucon-dlpi)
 
 ## About
 
@@ -22,7 +22,7 @@ This script helps to set up a Linux system with custom post-install configuratio
   - Focused on suckless dwm setup, noir theming, DAW and media production
 - **Void Linux** (minimal setup - works for me)
   - suckless dwm setup
-- **Debian Linux** (minimal setup - WORK IN PROGRESS)
+- **Debian Linux** (minimal setup - some parts work so... WORK IN PROGRESS)
   - suckless dwm setup
 
 This script and related scripts are created for personal use but are free to use and modify. It is designed to use `startx` and `.xinitrc` with Suckless DWM as the window manager. It does not support login managers such as SDDM and similar. If you need those, you will have to configure them yourself. Please proceed with caution as the script modifies your system settings!
