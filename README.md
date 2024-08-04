@@ -20,9 +20,9 @@ If not listed here - YOU are responsible to look in the script.
 This script helps to set up a Linux system with custom post-install configurations. It supports the following distributions:
 - **Arch Linux** (the largest script and most 'complete' setup - my daily driver)
   - Focused on suckless dwm setup, noir theming, DAW and media production
-- **Void Linux** (minimal setup - works for me)
+- **Void Linux** (minimal setup - Most of it works, but there are some bugs. It's a work in progress...)
   - suckless dwm setup
-- **Debian Linux** (minimal setup - some parts work so... WORK IN PROGRESS)
+- **Debian Linux** (minimal setup - Most of it works, but there are some bugs. It's a work in progress...)
   - suckless dwm setup
 
 This script and related scripts are created for personal use but are free to use and modify. It is designed to use `startx` and `.xinitrc` with Suckless DWM as the window manager. It does not support login managers such as SDDM and similar. If you need those, you will have to configure them yourself. Please proceed with caution as the script modifies your system settings!
